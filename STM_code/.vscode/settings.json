@@ -1,0 +1,33 @@
+{
+  "C_Cpp_Runner.cCompilerPath": "/Users/owner/.platformio/packages/toolchain-gccarmnoneeabi/bin/arm-none-eabi-gcc",
+  "C_Cpp_Runner.cppCompilerPath": "/usr/bin/clang++",
+  "C_Cpp_Runner.debuggerPath": "/usr/bin/lldb",
+  "C_Cpp_Runner.makePath": "/usr/bin/make",
+  "C_Cpp_Runner.warnings": [],
+  "C_Cpp_Runner.compilerArgs": [
+    "-mthumb",
+    "-mcpu=cortex-m0",
+    ""
+  ],
+  "C_Cpp_Runner.includePaths": [
+    "/Users/owner/Documents/Purdue/academics/362_TA/Lab0_test/include",
+    "/Users/owner/Documents/Purdue/academics/362_TA/Lab0_test/src",
+    "/Users/owner/.platformio/packages/framework-cmsis/CMSIS/Include",
+    "/Users/owner/.platformio/packages/framework-cmsis-stm32f0/Include",
+    ""
+  ],
+  "C_Cpp_Runner.linkerArgs": [],
+  "C_Cpp_Runner.excludeSearch": [],
+  "C_Cpp_Runner.enableWarnings": true,
+  "C_Cpp_Runner.warningsAsError": false,
+  "C_Cpp.errorSquiggles": "Disabled",
+  "files.associations": {
+    "stm32f0xx.h": "c",
+    "stm32f0xx_hal.h": "c",
+    "stm32f0xx_hal_conf.h": "c",
+    "stm32f0xx_hal_i2c.h": "c",
+    "stm32f0xx_hal_def.h": "c"
+  },
+  "C_Cpp_Runner.cStandard": "",
+  "C_Cpp_Runner.cppStandard": ""
+}
