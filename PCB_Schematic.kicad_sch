@@ -572,7 +572,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" " ~"
+			(property "Datasheet" "~"
 				(at 3.81 -1.27 0)
 				(effects
 					(font
@@ -3573,7 +3573,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" " 4.5V to 28V Input, 3A, Synchronous Step-Down Converter with Eco-mode(tm)"
+			(property "Description" "4.5V to 28V Input, 3A, Synchronous Step-Down Converter with Eco-mode(tm)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -3811,7 +3811,7 @@
 				)
 			)
 			(property "Datasheet" "https://www.onsemi.com/pub/Collateral/BSS138-D.PDF"
-				(at 0 0 0)
+				(at 5.08 -3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -4847,6 +4847,10 @@
 	(no_connect
 		(at 138.43 146.05)
 		(uuid "74f535b4-7bd6-4266-8615-0bcfa141b30d")
+	)
+	(no_connect
+		(at 194.31 107.95)
+		(uuid "7cf189c1-8f69-4588-940c-d5769401e8fb")
 	)
 	(no_connect
 		(at 138.43 156.21)
@@ -8806,7 +8810,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://mm.digikey.com/Volume0/opasdata/d220001/medias/docus/5534/USB-A1HSXX.pdf"
+		(property "Datasheet" "~"
 			(at 29.21 67.31 0)
 			(effects
 				(font
@@ -8815,7 +8819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "USB Type A connector"
 			(at 25.4 66.04 0)
 			(effects
 				(font
@@ -9214,7 +9218,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:TI_SO-PowerPAD-8_ThermalVias"
 			(at 116.84 35.56 0)
 			(effects
 				(font
@@ -9223,7 +9227,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps54331-q1.pdf?ts=1727123204197"
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tps54336a.pdf"
 			(at 119.38 38.1 0)
 			(effects
 				(font
@@ -9232,7 +9236,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "4.5V to 28V Input, 3A, Synchronous Step-Down Converter with Eco-mode(tm)"
 			(at 93.98 26.67 0)
 			(effects
 				(font
@@ -9540,7 +9544,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "50V Vds, 0.22A Id, N-Channel MOSFET, SOT-23"
 			(at 222.25 62.23 0)
 			(effects
 				(font
