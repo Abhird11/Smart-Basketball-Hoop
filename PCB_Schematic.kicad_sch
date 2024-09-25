@@ -300,244 +300,6 @@
 				)
 			)
 		)
-		(symbol "Connector:Conn_01x04_Female"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x04_Female"
-				(at 0 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x04_Female_1_1"
-				(arc
-					(start 0 -4.572)
-					(mid -0.5058 -5.08)
-					(end 0 -5.588)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 -2.032)
-					(mid -0.5058 -2.54)
-					(end 0 -3.048)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -0.508 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -2.54) (xy -0.508 -2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.54) (xy -0.508 2.54)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 0.508)
-					(mid -0.5058 0)
-					(end 0 -0.508)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0 3.048)
-					(mid -0.5058 2.54)
-					(end 0 2.032)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 3.81)
-					(name "Pin_4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:Conn_01x04_Pin"
 			(pin_names
 				(offset 1.016) hide)
@@ -8764,6 +8526,79 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 250.19 127 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "625e1561-9fbc-409a-a837-edb7971b739b")
+		(property "Reference" "J_Ultrasonic2"
+			(at 262.636 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x04_Pin"
+			(at 264.414 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:CONN_B4B-XH-A_JSTProject"
+			(at 250.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 250.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 250.19 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "04a3417d-a504-4fb4-a7e5-019be9cbc1c7")
+		)
+		(pin "2"
+			(uuid "48915b4b-a88f-4d0a-8136-73f3b9dc084e")
+		)
+		(pin "1"
+			(uuid "a116052d-f377-47a1-8d99-3a4ebc87b122")
+		)
+		(pin "4"
+			(uuid "0ac7504a-c525-4d68-ba7f-a5773f24af62")
+		)
+		(instances
+			(project "PCB_Schematic"
+				(path "/a0c17764-e0d1-4df5-b871-1489cf266494"
+					(reference "J_Ultrasonic2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 144.78 26.67 90)
 		(unit 1)
@@ -9127,82 +8962,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Female")
-		(at 255.27 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8263f329-2799-4d7a-9fcb-ce790397bb06")
-		(property "Reference" "J_IMU1"
-			(at 256.54 111.7599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_Female"
-			(at 256.54 114.2999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.27 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 255.27 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8d7b6690-e565-4679-9ffa-5c813dc010bb")
-		)
-		(pin "2"
-			(uuid "97205b4f-cb04-495b-9da9-508e071fe45a")
-		)
-		(pin "3"
-			(uuid "7aeae962-9361-4129-a1e8-cd8e3fb8cab9")
-		)
-		(pin "4"
-			(uuid "1e3862ce-979e-4d6f-a7fb-aa1db59cb585")
-		)
-		(instances
-			(project ""
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494"
-					(reference "J_IMU1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Polarized_US")
 		(at 58.42 77.47 0)
 		(unit 1)
@@ -9274,7 +9033,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 237.49 74.93 0)
+		(at 255.27 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9282,8 +9041,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90975b68-7743-4f83-aa5c-0057ac44344f")
-		(property "Reference" "J2"
-			(at 238.125 67.31 0)
+		(property "Reference" "J_Ultrasonic"
+			(at 255.905 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9291,15 +9050,15 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 238.125 69.85 0)
+			(at 255.905 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 237.49 74.93 0)
+		(property "Footprint" "Library:CONN_B4B-XH-A_JSTProject"
+			(at 255.27 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9308,7 +9067,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 237.49 74.93 0)
+			(at 255.27 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9317,7 +9076,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 237.49 74.93 0)
+			(at 255.27 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9340,7 +9099,7 @@
 		(instances
 			(project ""
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494"
-					(reference "J2")
+					(reference "J_Ultrasonic")
 					(unit 1)
 				)
 			)
@@ -10169,82 +9928,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Female")
-		(at 255.27 127 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bb898d8c-693e-4b2d-96f4-ed314c4bccd3")
-		(property "Reference" "J_IMU2"
-			(at 256.54 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Conn_01x04_Female"
-			(at 256.54 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 255.27 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 255.27 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 255.27 127 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "af7faaca-e488-440e-aec3-14c342d6ad6d")
-		)
-		(pin "2"
-			(uuid "98e6848b-72d6-4967-ac90-dc113585f4a4")
-		)
-		(pin "3"
-			(uuid "a19e428e-6d00-46b7-8a46-285f88213c18")
-		)
-		(pin "4"
-			(uuid "3a9c3b9c-0857-484e-8188-144ddd49a0ed")
-		)
-		(instances
-			(project ""
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494"
-					(reference "J_IMU2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 134.62 34.29 0)
 		(unit 1)
@@ -10381,35 +10064,32 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x04_Female")
-		(at 260.35 43.18 0)
+		(lib_id "Connector:Conn_01x04_Pin")
+		(at 250.19 111.76 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1b5b3fb-e603-4455-bf9d-6d9cf1f1d25d")
+		(uuid "c10ea1b1-05ee-4f39-8f91-0c780cce4620")
 		(property "Reference" "J_Ultrasonic1"
-			(at 261.62 43.1799 0)
+			(at 264.668 112.522 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x04_Female"
-			(at 261.62 45.7199 0)
+		(property "Value" "Conn_01x04_Pin"
+			(at 265.43 114.808 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 260.35 43.18 0)
+		(property "Footprint" "Library:CONN_B4B-XH-A_JSTProject"
+			(at 250.19 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10418,7 +10098,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 260.35 43.18 0)
+			(at 250.19 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10426,29 +10106,29 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 260.35 43.18 0)
+		(property "Description" "Generic connector, single row, 01x04, script generated"
+			(at 250.19 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "14684709-7b1d-4510-bf14-2991269cb53e")
-		)
-		(pin "2"
-			(uuid "6a4425a6-5236-4c80-ab81-ff1e50449afc")
 		)
 		(pin "3"
-			(uuid "7f1f68e4-d41f-4ee1-8109-66fd4c8464bd")
+			(uuid "add897ec-2bec-4156-a27d-0632b1bf652b")
+		)
+		(pin "2"
+			(uuid "6ea18de8-779f-4b3b-9937-8d7ac6c290d7")
+		)
+		(pin "1"
+			(uuid "031827ad-bca7-49f8-9b4c-7d34c6cfc0e7")
 		)
 		(pin "4"
-			(uuid "af4134cd-fda3-4273-b4fc-ff470c6ff1c3")
+			(uuid "25e24c62-0791-4cf4-b04c-899ab698f673")
 		)
 		(instances
-			(project ""
+			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494"
 					(reference "J_Ultrasonic1")
 					(unit 1)
