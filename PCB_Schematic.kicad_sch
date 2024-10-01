@@ -13830,7 +13830,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Library:CONN_B4B-XH-A_JSTProject"
 			(at 267.97 88.9 0)
 			(effects
 				(font
