@@ -1652,12 +1652,6 @@
 		(uuid "0763332c-2fad-4031-9ddd-2be69b04a981")
 	)
 	(junction
-		(at 67.31 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0ff3b030-8002-4c49-bf9e-299efa00a975")
-	)
-	(junction
 		(at 187.96 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1676,6 +1670,12 @@
 		(uuid "2486218a-6673-4aec-8974-50ddcfd9f2dc")
 	)
 	(junction
+		(at 81.28 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "303c359e-c15b-4767-b262-39bb8739ab47")
+	)
+	(junction
 		(at 80.01 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1686,12 +1686,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3ccaa632-897c-4536-96df-d6166e5e8948")
-	)
-	(junction
-		(at 74.93 125.73)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ab915b7-5c88-4b4e-bfba-c5e8487405ee")
 	)
 	(junction
 		(at 80.01 125.73)
@@ -1760,6 +1754,12 @@
 		(uuid "92753827-851a-415b-b5a3-dabf91d50ede")
 	)
 	(junction
+		(at 87.63 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "940d434f-1b96-47cc-a61a-09c9f8eb26d9")
+	)
+	(junction
 		(at 231.14 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1814,6 +1814,12 @@
 		(uuid "e97673d1-83b3-465f-8129-72e3270b898f")
 	)
 	(junction
+		(at 74.93 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec9cedcc-4b2c-4eb5-822f-44768eb5c4e4")
+	)
+	(junction
 		(at 231.14 140.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1852,6 +1858,16 @@
 			(type default)
 		)
 		(uuid "0320e751-8515-434a-902a-2361a5525eb6")
+	)
+	(wire
+		(pts
+			(xy 87.63 125.73) (xy 91.44 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "038ccf80-d955-4856-bdd7-fc12b7c227f2")
 	)
 	(wire
 		(pts
@@ -1975,6 +1991,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 45.72) (xy 73.66 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31112ff7-5dc4-456a-b33b-cac5f3bf0d64")
+	)
+	(wire
+		(pts
 			(xy 177.8 50.8) (xy 184.15 50.8)
 		)
 		(stroke
@@ -2055,16 +2081,6 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 125.73) (xy 74.93 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "52ef63f1-1a78-4096-b2d3-d535e02308f1")
-	)
-	(wire
-		(pts
 			(xy 80.01 125.73) (xy 80.01 129.54)
 		)
 		(stroke
@@ -2082,6 +2098,16 @@
 			(type default)
 		)
 		(uuid "5daed341-485e-4f12-a07b-a22348609f49")
+	)
+	(wire
+		(pts
+			(xy 73.66 125.73) (xy 74.93 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a6069b8-34bb-474e-b8cd-707082bf8660")
 	)
 	(wire
 		(pts
@@ -2135,7 +2161,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 45.72) (xy 73.66 45.72)
+			(xy 124.46 45.72) (xy 81.28 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2325,16 +2351,6 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 125.73) (xy 67.31 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd3331f8-884e-40fd-9865-29456fdd43a8")
-	)
-	(wire
-		(pts
 			(xy 220.98 133.35) (xy 231.14 133.35)
 		)
 		(stroke
@@ -2355,7 +2371,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 125.73) (xy 91.44 125.73)
+			(xy 80.01 125.73) (xy 87.63 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3584,6 +3600,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 87.63 125.73 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d7d3ce8-81cb-4071-86eb-659fde1f1ca5")
+		(property "Reference" "#PWR023"
+			(at 87.63 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 87.63 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 87.63 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a6a0a6b-a7ce-4dda-b67d-8b332c134406")
+		)
+		(instances
+			(project ""
+				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/e6fb26c7-dfd6-4c6c-883e-94dceb19958a"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 242.57 137.16 0)
 		(unit 1)
@@ -3931,6 +4013,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 69.85 125.73 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "70f2b59a-5b4c-4997-8264-0b036f405fc6")
+		(property "Reference" "D1"
+			(at 68.58 130.556 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BAT60JFILM"
+			(at 64.262 119.634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
+			(at 69.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 69.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 69.85 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ac9da905-c1a5-47f6-b020-736af00f8bb5")
+		)
+		(pin "1"
+			(uuid "c4cb565d-ba0e-4308-85de-e7818a5d1f59")
+		)
+		(instances
+			(project "PCB_Schematic"
+				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/e6fb26c7-dfd6-4c6c-883e-94dceb19958a"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 187.96 137.16 0)
 		(unit 1)
@@ -4134,71 +4285,6 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/e6fb26c7-dfd6-4c6c-883e-94dceb19958a"
 					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 67.31 125.73 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "7e8b9a03-bba2-4e5c-9ab6-fe5ac6b42487")
-		(property "Reference" "#PWR040"
-			(at 67.31 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 67.31 120.396 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 67.31 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8c4be308-4dca-4e8c-b751-6ab13bcf2696")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/e6fb26c7-dfd6-4c6c-883e-94dceb19958a"
-					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -4964,6 +5050,72 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/e6fb26c7-dfd6-4c6c-883e-94dceb19958a"
 					(reference "U7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 81.28 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5368990-6185-433c-906d-d37f11167e45")
+		(property "Reference" "#FLG02"
+			(at 81.28 43.815 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 81.28 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 81.28 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 81.28 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 81.28 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2f29ae7c-55cc-4447-adba-5db90186197b")
+		)
+		(instances
+			(project ""
+				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/e6fb26c7-dfd6-4c6c-883e-94dceb19958a"
+					(reference "#FLG02")
 					(unit 1)
 				)
 			)
