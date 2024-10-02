@@ -1818,7 +1818,7 @@
 		)
 		(uuid "e085d67f-462f-40c7-bb59-97dfa4bc033b")
 	)
-	(label "3V3OUT"
+	(label "VCCIO"
 		(at 116.84 87.63 0)
 		(fields_autoplaced yes)
 		(effects
