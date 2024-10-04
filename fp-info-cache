@@ -1,4 +1,4 @@
-23839629742499036
+23849996613439861
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64700,6 +64700,48 @@ B4B-XH-A
 0
 4
 4
+Library
+Project_BSS
+
+
+0
+3
+3
+Library
+Project_Clock
+
+MAX7375AXR805+T 
+0
+3
+3
+Library
+Project_FT232
+<b>Shrink Small Outline Package</b> SSOP-28<p>http://www.ftdichip.com/Documents/DataSheets/DS_FT232R_v104.pdf
+
+0
+28
+28
+Library
+Project_LM1117
+
+
+0
+3
+3
+Library
+Project_TPS
+
+TPS54331QDRQ1 
+0
+8
+8
+Library
+Project_USB
+
+USB-A1HSW6 
+0
+6
+6
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
