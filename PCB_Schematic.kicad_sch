@@ -6313,7 +6313,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_AMASS:AMASS_XT30PW-M_1x02_P2.50mm_Horizontal"
+		(property "Footprint" "Library:2Pin"
 			(at 26.67 105.41 0)
 			(effects
 				(font
