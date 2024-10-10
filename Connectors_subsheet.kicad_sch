@@ -5184,7 +5184,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:Project_BSS"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
 			(at 71.755 137.16 0)
 			(effects
 				(font
@@ -7973,7 +7973,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:Project_USB"
+		(property "Footprint" "Connector_USB:USB_A_Receptacle_GCT_USB1046"
 			(at 176.53 72.39 0)
 			(effects
 				(font
