@@ -3071,7 +3071,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric"
 			(at 86.0552 92.71 0)
 			(effects
 				(font
@@ -4522,7 +4522,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Library:LDO_fp"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223"
 			(at 54.61 130.81 0)
 			(effects
 				(font
