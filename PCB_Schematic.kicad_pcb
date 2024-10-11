@@ -24303,7 +24303,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R12"
-			(at -0.238 -2.794 360)
+			(at -0.238 -2.794 0)
 			(layer "F.SilkS")
 			(uuid "1f6bdf10-7f1c-4662-aea3-3d6dfbfc2a34")
 			(effects
@@ -30747,6 +30747,14 @@
 		(uuid "ff2a7aa5-6608-4932-a05f-eeaa0ab0ede1")
 	)
 	(via
+		(at 113.275 54.61)
+		(size 0.6)
+		(drill 0.381)
+		(layers "F.Cu" "B.Cu")
+		(net 4)
+		(uuid "177ad7ab-f20e-43e7-8300-6ed3dc2ee3a8")
+	)
+	(via
 		(at 120.142 99.568)
 		(size 0.6)
 		(drill 0.381)
@@ -30785,14 +30793,6 @@
 		(layers "F.Cu" "B.Cu")
 		(net 4)
 		(uuid "9762d4ea-b16f-4458-a687-e75116943d4c")
-	)
-	(via
-		(at 113.275 54.6405)
-		(size 0.8)
-		(drill 0.4)
-		(layers "F.Cu" "B.Cu")
-		(net 4)
-		(uuid "9bf4f554-2705-4e4d-802a-740023e0323c")
 	)
 	(via
 		(at 127.254 103.124)
@@ -30859,6 +30859,14 @@
 		(uuid "39e937c4-60a5-4ecb-8760-fee92963f659")
 	)
 	(segment
+		(start 113.275 54.61)
+		(end 113.275 54.6405)
+		(width 0.3)
+		(layer "B.Cu")
+		(net 4)
+		(uuid "42abe3e7-a3d7-4586-b2ee-947a4db08861")
+	)
+	(segment
 		(start 99.568 60.96)
 		(end 98.806 60.96)
 		(width 0.3)
@@ -30916,7 +30924,7 @@
 	)
 	(segment
 		(start 113.275 46.999)
-		(end 113.275 54.6405)
+		(end 113.275 54.61)
 		(width 0.3)
 		(layer "B.Cu")
 		(net 4)
