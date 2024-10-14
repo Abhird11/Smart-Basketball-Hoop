@@ -1,4 +1,4 @@
-23862097693626882
+23863826829402733
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64777,6 +64777,13 @@ USB-A1HSW6
 0
 6
 6
+Library
+SCH_FT
+
+BAT60JFILM 
+0
+2
+2
 Library
 SW_TS04-66-55-BK-160-SMT
 

@@ -1661,7 +1661,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "091895be-a31a-4863-ab98-e1eccb8578bc")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR030"
 			(at 120.65 92.71 0)
 			(effects
 				(font
@@ -1711,7 +1711,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR032")
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -1799,7 +1799,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "350aa3c7-bdce-46bf-aa79-3003f1dc3eb5")
-		(property "Reference" "TP4"
+		(property "Reference" "TP3"
 			(at 152.4 86.868 0)
 			(effects
 				(font
@@ -1850,7 +1850,7 @@
 		(instances
 			(project ""
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "TP4")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -1957,7 +1957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e411745-a017-42b3-8333-2ca6fd038be8")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR032"
 			(at 139.7 110.49 0)
 			(effects
 				(font
@@ -2007,7 +2007,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR034")
+					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -2160,7 +2160,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "71aacdd1-ff40-4fe8-a557-e4226a2cc0a5")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR029"
 			(at 74.93 106.68 0)
 			(effects
 				(font
@@ -2210,7 +2210,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR031")
+					(reference "#PWR029")
 					(unit 1)
 				)
 			)
@@ -2225,7 +2225,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "795b4900-7e73-4fb2-b5c2-629872eedf7c")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR033"
 			(at 189.23 93.98 0)
 			(effects
 				(font
@@ -2275,7 +2275,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR035")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -2360,7 +2360,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "952cc3a6-4e7e-4d86-b2ed-c686bb8d06d5")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR028"
 			(at 74.93 83.82 0)
 			(effects
 				(font
@@ -2411,7 +2411,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR030")
+					(reference "#PWR028")
 					(unit 1)
 				)
 			)
@@ -2426,7 +2426,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ad1e27dc-2a2b-4bf1-bab9-338083ec5880")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR027"
 			(at 62.23 93.98 0)
 			(effects
 				(font
@@ -2476,7 +2476,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR029")
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -2492,7 +2492,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd69cbdf-7004-4c5f-899b-7c54d2cbd474")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR031"
 			(at 139.7 83.82 0)
 			(effects
 				(font
@@ -2542,7 +2542,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR033")
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -2558,7 +2558,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f22bfd70-5649-42c9-8025-7d16a3c6380d")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR034"
 			(at 237.49 87.63 0)
 			(effects
 				(font
@@ -2609,7 +2609,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/77009ed7-b9d0-4599-9e36-0d7b5cc2a84b"
-					(reference "#PWR036")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
