@@ -1466,12 +1466,6 @@
 		(uuid "27f12e62-10d9-4ec2-8935-69fff3261faa")
 	)
 	(junction
-		(at 182.88 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "30197f49-32e3-42f2-bfe8-835e00028f0a")
-	)
-	(junction
 		(at 146.05 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1494,12 +1488,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3389259-6065-48f2-9c9c-0b528aa45e7d")
-	)
-	(junction
-		(at 179.07 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b3d25c94-7520-4edb-b22b-a4c2bb0bf512")
 	)
 	(junction
 		(at 195.58 87.63)
@@ -1589,16 +1577,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 83.82) (xy 179.07 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f633977-348b-40c7-bed8-43f606784529")
-	)
-	(wire
-		(pts
 			(xy 123.19 123.19) (xy 123.19 130.81)
 		)
 		(stroke
@@ -1616,16 +1594,6 @@
 			(type default)
 		)
 		(uuid "222732ef-1678-49f6-a46c-92d2c5398c11")
-	)
-	(wire
-		(pts
-			(xy 182.88 90.17) (xy 207.01 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ab121c3-c598-4b57-8871-6d368b4e1900")
 	)
 	(wire
 		(pts
@@ -1659,7 +1627,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 87.63) (xy 179.07 87.63)
+			(xy 163.83 87.63) (xy 195.58 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1679,23 +1647,13 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 90.17) (xy 182.88 90.17)
+			(xy 163.83 90.17) (xy 207.01 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4cb6bf9b-6aa5-4322-9c6d-ee582cb7349a")
-	)
-	(wire
-		(pts
-			(xy 182.88 90.17) (xy 182.88 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "535fdf98-907e-4c70-b81d-de3ee29e4a7e")
 	)
 	(wire
 		(pts
@@ -1709,16 +1667,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 83.82) (xy 187.96 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "553c7441-ca91-41f4-9ae7-c299981f869a")
-	)
-	(wire
-		(pts
 			(xy 195.58 87.63) (xy 209.55 87.63)
 		)
 		(stroke
@@ -1726,16 +1674,6 @@
 			(type default)
 		)
 		(uuid "6259fe24-d6d3-4789-b613-764952b06c64")
-	)
-	(wire
-		(pts
-			(xy 179.07 87.63) (xy 195.58 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "653aea55-a3f9-4317-ba04-62a8acb8db15")
 	)
 	(wire
 		(pts
@@ -2292,141 +2230,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 187.96 68.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2daa1221-0749-46b9-96f0-331374357156")
-		(property "Reference" "#PWR018"
-			(at 187.96 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 187.96 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 187.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 187.96 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7e17289f-b0c0-4b89-9217-685622c8c5c1")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "#PWR018")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 179.07 80.01 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "30883e68-de71-485d-9f92-9477494be103")
-		(property "Reference" "D8"
-			(at 171.45 78.4225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "LED_Green"
-			(at 175.26 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 179.07 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 179.07 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "74a757ad-b2df-4d46-aad6-d598602f95db")
-		)
-		(pin "1"
-			(uuid "32873f01-c516-4530-a0a2-bd528b0de707")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 118.11 105.41 0)
 		(unit 1)
@@ -2629,75 +2432,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 187.96 80.01 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "60ee1733-8135-433a-b7d0-a3e47feb3976")
-		(property "Reference" "D10"
-			(at 180.34 78.4225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "LED_Red"
-			(at 184.15 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 187.96 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f493f96c-f347-4aeb-ae2f-798a81e494b4")
-		)
-		(pin "1"
-			(uuid "8b854d4b-8afd-4c8e-b44f-c3d2d47a8e8b")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "D10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 107.95 83.82 180)
 		(unit 1)
@@ -2761,76 +2495,6 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 179.07 72.39 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6164eda3-da23-43e0-bfa4-34008e66041c")
-		(property "Reference" "R9"
-			(at 176.53 73.6601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "150"
-			(at 176.53 71.1201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 180.848 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 179.07 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 179.07 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "5cd3a708-2212-42fd-8218-a3cd56ab4ab0")
-		)
-		(pin "1"
-			(uuid "17687c7e-35c5-436a-a7df-1e8a4c719989")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -3036,72 +2700,6 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
 					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 179.07 68.58 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cf58c10b-501d-40bc-b6ee-970c1f7e240f")
-		(property "Reference" "#PWR017"
-			(at 179.07 62.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 179.07 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 179.07 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 179.07 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 179.07 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1ff07cda-fcc2-4704-a216-ddd04bb36105")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "#PWR017")
 					(unit 1)
 				)
 			)
@@ -3379,76 +2977,6 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
 					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 187.96 72.39 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ee927177-b2f2-46e4-bc47-41c27b6d83ec")
-		(property "Reference" "R11"
-			(at 185.42 73.6601 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "150"
-			(at 185.42 71.1201 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 189.738 72.39 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 187.96 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 187.96 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "a0c3adb1-4817-4c1d-af9d-e8a9e524e24d")
-		)
-		(pin "1"
-			(uuid "c2bb40f5-f746-41d7-8ecd-35fd37e4623f")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "R11")
 					(unit 1)
 				)
 			)
