@@ -1,4 +1,4 @@
-23858639821980222
+23862097693626882
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64736,6 +64736,13 @@ Project_BSS
 3
 3
 Library
+Project_CON
+
+702461004 
+0
+10
+10
+Library
 Project_Clock
 
 MAX7375AXR805+T 
@@ -64770,6 +64777,13 @@ USB-A1HSW6
 0
 6
 6
+Library
+SW_TS04-66-55-BK-160-SMT
+
+
+0
+4
+4
 Library
 inductor
 

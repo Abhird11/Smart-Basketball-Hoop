@@ -2641,7 +2641,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Button_Switch_SMD:SW_SPST_PTS645"
+		(property "Footprint" "Library:SW_TS04-66-55-BK-160-SMT"
 			(at 67.31 82.55 0)
 			(effects
 				(font
