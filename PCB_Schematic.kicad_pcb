@@ -8876,7 +8876,7 @@
 			)
 		)
 		(property "Value" "Programming Header"
-			(at 1.27 16.26 0)
+			(at 3.81 16.26 0)
 			(layer "F.Fab")
 			(uuid "326bf817-6da7-487f-910e-0d8c59420e62")
 			(effects

@@ -2104,7 +2104,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1403c9c0-69ef-48b4-b5f1-639c6d8fd21b")
-		(property "Reference" "D9"
+		(property "Reference" "D8"
 			(at 187.96 101.9175 0)
 			(effects
 				(font
@@ -2158,7 +2158,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "D9")
+					(reference "D8")
 					(unit 1)
 				)
 			)
@@ -2645,7 +2645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93122664-bc70-4b88-87cb-3631140954d6")
-		(property "Reference" "R10"
+		(property "Reference" "R9"
 			(at 182.88 106.6799 0)
 			(effects
 				(font
@@ -2699,7 +2699,7 @@
 		(instances
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "R10")
+					(reference "R9")
 					(unit 1)
 				)
 			)
