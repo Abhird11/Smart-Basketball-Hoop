@@ -17841,7 +17841,6 @@
 			)
 		)
 		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
-		(path "/e6fb26c7-dfd6-4c6c-883e-94dceb19958a/70f2b59a-5b4c-4997-8264-0b036f405fc6")
 		(sheetname "Power Circuitry (Buck LDO Decoupling Caps)")
 		(sheetfile "Power_subsheet.kicad_sch")
 		(attr smd)
