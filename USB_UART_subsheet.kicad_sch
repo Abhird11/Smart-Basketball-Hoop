@@ -5,108 +5,6 @@
 	(uuid "1b369fa7-dec0-46b2-80e7-55ff16888608")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:TestPoint"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.762) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -1478,22 +1376,10 @@
 		(uuid "5623d89f-f5c7-4bcc-9f41-c810481a561d")
 	)
 	(junction
-		(at 207.01 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6adf0f15-8f9c-40ad-9134-be806d955a94")
-	)
-	(junction
 		(at 138.43 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b3389259-6065-48f2-9c9c-0b528aa45e7d")
-	)
-	(junction
-		(at 195.58 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e34b8647-6d1e-4e50-8028-ce9beeced6e4")
 	)
 	(junction
 		(at 143.51 130.81)
@@ -1627,7 +1513,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 87.63) (xy 195.58 87.63)
+			(xy 163.83 87.63) (xy 209.55 87.63)
 		)
 		(stroke
 			(width 0)
@@ -1647,7 +1533,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 90.17) (xy 207.01 90.17)
+			(xy 163.83 90.17) (xy 209.55 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1664,26 +1550,6 @@
 			(type default)
 		)
 		(uuid "54edddd7-1a7b-44d1-aec5-dfadcaaf5fd5")
-	)
-	(wire
-		(pts
-			(xy 195.58 87.63) (xy 209.55 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6259fe24-d6d3-4789-b613-764952b06c64")
-	)
-	(wire
-		(pts
-			(xy 207.01 87.63) (xy 207.01 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65d3f21e-f5c3-4f3c-a68b-565631210b29")
 	)
 	(wire
 		(pts
@@ -1824,16 +1690,6 @@
 			(type default)
 		)
 		(uuid "f7b5a64b-c75e-49d4-a1df-87ece3d67a2e")
-	)
-	(wire
-		(pts
-			(xy 207.01 90.17) (xy 209.55 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc9bb98c-a6d9-4f7d-8642-1ff145b8b9fd")
 	)
 	(text "USB to UART Converter"
 		(exclude_from_sim no)
@@ -2024,72 +1880,6 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 207.01 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "134491b9-7bf8-4fba-b4c1-3a9f82273e7c")
-		(property "Reference" "TP2"
-			(at 204.724 78.994 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RXD"
-			(at 204.724 81.534 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 212.09 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 212.09 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 207.01 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "98471406-6062-46a8-814c-2358ec382759")
-		)
-		(instances
-			(project ""
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -2290,72 +2080,6 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 195.58 87.63 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "4288daf6-ca0c-4433-aa96-f1e007ff9c37")
-		(property "Reference" "TP1"
-			(at 195.58 79.756 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TXD"
-			(at 195.58 82.296 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 200.66 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 200.66 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "test point"
-			(at 195.58 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4ffa4e4e-7065-4091-99e4-736bfc907a6d")
-		)
-		(instances
-			(project ""
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "TP1")
 					(unit 1)
 				)
 			)
