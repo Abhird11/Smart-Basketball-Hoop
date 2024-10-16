@@ -1,4 +1,4 @@
-23863827075797667
+23867295994428185
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -64720,7 +64720,7 @@ LDO_fp
 LM1117MPX-ADJ/NOPB 
 0
 4
-4
+3
 Library
 PRT
 
@@ -64778,6 +64778,13 @@ USB-A1HSW6
 6
 6
 Library
+REALWORKLDOFT
+
+
+0
+4
+4
+Library
 SCH_FT
 
 BAT60JFILM 
@@ -64798,6 +64805,13 @@ XAL4030-682MEC
 0
 2
 2
+Library
+updatedLM
+
+LM1117MP-ADJ/NOPB 
+0
+4
+4
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
