@@ -2809,6 +2809,12 @@
 		(uuid "d269b29c-a14a-43a6-9963-c3206a137a18")
 	)
 	(junction
+		(at 196.85 66.04)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d7b43f99-1bdb-47cb-bd45-a796fdd82a11")
+	)
+	(junction
 		(at 40.64 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2831,12 +2837,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fa66a062-525c-4556-a9cf-7b517f897c3d")
-	)
-	(junction
-		(at 180.34 66.04)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fe943179-0541-4ab7-b5c3-d785adf325ac")
 	)
 	(no_connect
 		(at 170.18 81.28)
@@ -3044,6 +3044,16 @@
 	)
 	(wire
 		(pts
+			(xy 190.5 66.04) (xy 196.85 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a6b6302-abb6-48e1-b06d-ab40771ac7f1")
+	)
+	(wire
+		(pts
 			(xy 118.11 148.59) (xy 125.73 148.59)
 		)
 		(stroke
@@ -3241,6 +3251,16 @@
 			(type default)
 		)
 		(uuid "96a6eed5-381c-4076-a10d-ee9341ab9a70")
+	)
+	(wire
+		(pts
+			(xy 196.85 66.04) (xy 207.01 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96f7e87f-9cda-4194-a51e-4adcf7e0e309")
 	)
 	(wire
 		(pts
@@ -3574,6 +3594,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 66.04) (xy 182.88 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6f9adc2-efd4-4227-9e0a-314c10355e4a")
+	)
+	(wire
+		(pts
 			(xy 215.9 144.78) (xy 215.9 149.86)
 		)
 		(stroke
@@ -3621,16 +3651,6 @@
 			(type default)
 		)
 		(uuid "fb792654-6fe8-4d87-9186-f05ac232720a")
-	)
-	(wire
-		(pts
-			(xy 187.96 66.04) (xy 207.01 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdddf7b7-4da8-4e47-97a8-35fb3d6638e7")
 	)
 	(wire
 		(pts
@@ -5105,7 +5125,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 180.34 66.04 0)
+		(at 196.85 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5114,7 +5134,7 @@
 		(fields_autoplaced yes)
 		(uuid "67e709ee-b6e4-4085-921a-0b2800feec5d")
 		(property "Reference" "#PWR043"
-			(at 180.34 69.85 0)
+			(at 196.85 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5123,7 +5143,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 180.34 60.96 0)
+			(at 196.85 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5131,7 +5151,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 66.04 0)
+			(at 196.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5140,7 +5160,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 66.04 0)
+			(at 196.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5149,7 +5169,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 180.34 66.04 0)
+			(at 196.85 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5579,7 +5599,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 184.15 66.04 180)
+		(at 186.69 66.04 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5587,7 +5607,7 @@
 		(dnp no)
 		(uuid "8345edae-69cf-4ed1-997b-4936fe542f93")
 		(property "Reference" "D12"
-			(at 182.88 70.866 90)
+			(at 185.42 70.866 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5596,7 +5616,7 @@
 			)
 		)
 		(property "Value" "BAT60JFILM"
-			(at 181.61 58.928 0)
+			(at 184.15 58.928 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5605,7 +5625,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering"
-			(at 184.15 66.04 0)
+			(at 186.69 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5614,7 +5634,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 184.15 66.04 0)
+			(at 186.69 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5623,7 +5643,7 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 184.15 66.04 0)
+			(at 186.69 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
