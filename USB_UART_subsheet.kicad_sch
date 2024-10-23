@@ -1346,7 +1346,13 @@
 		)
 	)
 	(junction
-		(at 146.05 78.74)
+		(at 146.05 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "012713d8-9bfc-4eae-8145-3e1cf03c097f")
+	)
+	(junction
+		(at 146.05 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0241d730-ccc9-492b-a886-42c387cd8975")
@@ -1435,6 +1441,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 73.66) (xy 134.62 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02c21f1d-20c1-4140-b7e4-20cfc014401b")
+	)
+	(wire
+		(pts
 			(xy 146.05 130.81) (xy 148.59 130.81)
 		)
 		(stroke
@@ -1475,7 +1491,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 72.39) (xy 146.05 78.74)
+			(xy 146.05 72.39) (xy 146.05 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1512,6 +1528,16 @@
 			(type default)
 		)
 		(uuid "35996718-6ea9-4a19-91a7-e1b6179c1806")
+	)
+	(wire
+		(pts
+			(xy 93.98 105.41) (xy 93.98 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "389d6bc0-87d1-4083-b6f8-5ff47b1bbd96")
 	)
 	(wire
 		(pts
@@ -1585,6 +1611,16 @@
 	)
 	(wire
 		(pts
+			(xy 146.05 77.47) (xy 146.05 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fbba1ec-8f0f-47ac-b9c7-1c3f5aa58ca2")
+	)
+	(wire
+		(pts
 			(xy 121.92 87.63) (xy 121.92 80.01)
 		)
 		(stroke
@@ -1612,6 +1648,16 @@
 			(type default)
 		)
 		(uuid "78561827-c1b2-4426-a03d-fd4a587c2819")
+	)
+	(wire
+		(pts
+			(xy 93.98 105.41) (xy 123.19 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89906e37-b6ef-4ff2-ac70-b4170c2b9ec8")
 	)
 	(wire
 		(pts
@@ -1665,16 +1711,6 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 74.93) (xy 152.4 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb4d21f6-fe0f-415c-9281-da0aec9fd78f")
-	)
-	(wire
-		(pts
 			(xy 180.34 111.76) (xy 180.34 115.57)
 		)
 		(stroke
@@ -1685,16 +1721,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 105.41) (xy 123.19 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d33f571d-62ba-4cbc-9193-5dac27dc0617")
-	)
-	(wire
-		(pts
 			(xy 166.37 82.55) (xy 172.72 82.55)
 		)
 		(stroke
@@ -1702,6 +1728,16 @@
 			(type default)
 		)
 		(uuid "daaf8087-d49f-4499-966d-bb64a8aa0f1c")
+	)
+	(wire
+		(pts
+			(xy 134.62 73.66) (xy 134.62 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dec69b8e-c3ce-4c4f-af32-b0db32ef89d3")
 	)
 	(wire
 		(pts
@@ -1725,7 +1761,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 78.74) (xy 146.05 78.74)
+			(xy 146.05 74.93) (xy 166.37 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1735,13 +1771,13 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 74.93) (xy 166.37 74.93)
+			(xy 134.62 77.47) (xy 146.05 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ee7e06c3-0a91-48bf-813e-ae15a93153c7")
+		(uuid "f04d46f1-ce36-4339-8ad3-369849e13183")
 	)
 	(wire
 		(pts
@@ -1755,7 +1791,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 78.74) (xy 146.05 80.01)
+			(xy 146.05 74.93) (xy 146.05 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2184,72 +2220,6 @@
 			(project "PCB_Schematic"
 				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 118.11 105.41 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37b5c4ca-ace3-412d-80f9-52a6032605f9")
-		(property "Reference" "#PWR013"
-			(at 118.11 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 118.11 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 118.11 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3c7e40f9-c4fa-444b-bc2a-2e480e5a3769")
-		)
-		(instances
-			(project "PCB_Schematic"
-				(path "/a0c17764-e0d1-4df5-b871-1489cf266494/8edd1d5f-65c6-4da1-89c4-ae03b62a6366"
-					(reference "#PWR013")
 					(unit 1)
 				)
 			)
