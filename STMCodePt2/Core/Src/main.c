@@ -22,6 +22,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include <string.h>
+#include <stdio.h>
 
 /* USER CODE END Includes */
 
@@ -54,7 +55,8 @@ UART_HandleTypeDef huart6;
 #define LSM9DS1_ADDR_WRITE  (0x6A << 1)  // Device write register
 #define LSM9DS1_ADDR_READ   ((0x6A << 1) | 0x01)  // Device read register
 #define REG_ACCEL 0x28	// X acceleration data register
-
+#define TRIGGER_PIN 1                  // Assume trigger is connected to PB6
+#define ECHO_PIN 2                     // Assume echo is connected to PB7
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -125,6 +127,7 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -133,6 +136,10 @@ int main(void)
   MX_USART5_UART_Init();
   MX_I2C2_Init();
   MX_USART6_UART_Init();
+
+  float measure_distance(void);
+  extern void nano_wait(int);
+  void delay_us(uint32_t us);
 
   /* USER CODE BEGIN 2 */
   DIST_THRESHOLD = 2;
@@ -159,8 +166,6 @@ int main(void)
   rim_time = 0;
   back_time = 0;
 
-
-
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -182,6 +187,10 @@ int main(void)
 		strcpy((char*) buf, "Device 1 not ready\r\n");
 		HAL_UART_Transmit(&huart5, buf, strlen((char*) buf), 10000);
 		HAL_Delay(500);
+
+		if (HAL_I2C_IsDeviceReady(&hi2c1, LSM9DS1_ADDR_WRITE, 100, 1000) == HAL_BUSY) {
+			// Write deinit and init bus code here
+		}
 		continue;
 	}
 
@@ -190,6 +199,10 @@ int main(void)
 		strcpy((char*) buf, "Device 2 not ready\r\n");
 		HAL_UART_Transmit(&huart5, buf, strlen((char*) buf), 10000);
 		HAL_Delay(500);
+
+		if (HAL_I2C_IsDeviceReady(&hi2c2, LSM9DS1_ADDR_WRITE, 100, 1000) == HAL_BUSY) {
+			// Write deinit and init bus code here
+		}
 		continue;
 	}
 
@@ -239,16 +252,16 @@ int main(void)
 		dist_time = 0;
 	}
 
+	accel_back_mag = (accel_back_mag + accel_x_back + accel_y_back + accel_z_back) / 2;
+		if (accel_back_mag > BACK_THRESHOLD) {
+			back_flag = 1;
+			back_time = 0;
+		}
+
 	accel_rim_mag = (accel_rim_mag + accel_x_rim + accel_y_rim + accel_z_rim) / 2;
-	if (accel_rim_mag > RIM_THRESHOLD) {
+	if (accel_rim_mag - accel_back_mag > RIM_THRESHOLD || accel_back_mag - accel_rim_mag > RIM_THRESHOLD) {
 		rim_flag = 1;
 		rim_time = 0;
-	}
-
-	accel_back_mag = (accel_back_mag + accel_x_back + accel_y_back + accel_z_back) / 2;
-	if (accel_x_back + accel_y_back + accel_z_back > BACK_THRESHOLD) {
-		back_flag = 1;
-		back_time = 0;
 	}
 
 	// Reset flags if time passed
@@ -277,7 +290,12 @@ int main(void)
 	HAL_Delay(100);
 
 	// NOTE: TESTING CODE TO SEE RAW VALUES
-//	snprintf(buf, 60, "%d %d %d %d %d %d %d\n", distance*1000, accel_x_rim, accel_y_rim, accel_z_rim, accel_x_back, accel_y_back, accel_z_back);
+
+//	snprintf(buf, 60, "%d\r\n", distance*1000);
+//	HAL_UART_Transmit(&huart5, buf, BUFFER_SIZE, 10000);
+//	snprintf(buf, 60, "%d %d %d\r\n", accel_x_rim, accel_y_rim, accel_z_rim);
+//	HAL_UART_Transmit(&huart5, buf, BUFFER_SIZE, 10000);
+//	snprintf(buf, 60, "%d %d %d\r\n", accel_x_back, accel_y_back, accel_z_back);
 //	HAL_UART_Transmit(&huart5, buf, BUFFER_SIZE, 10000);
 
 	// Increment times

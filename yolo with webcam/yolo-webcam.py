@@ -258,7 +258,11 @@ while True:
             ball.conf /= 2
         if player.conf > 0.05:
             player.conf /= 2
-
+    else:
+        if ball.conf > 0.3:
+            ball.conf -= 0.05
+        if player.conf > .3:
+            player.conf -= 0.05
 
     for r in results:
 

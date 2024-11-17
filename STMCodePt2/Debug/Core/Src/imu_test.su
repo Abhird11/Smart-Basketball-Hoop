@@ -1,0 +1,10 @@
+../Core/Src/imu_test.c:91:5:main	104	static
+../Core/Src/imu_test.c:274:6:delay_us	16	static
+../Core/Src/imu_test.c:279:7:measure_distance	32	static
+../Core/Src/imu_test.c:329:6:SystemClock_Config	112	static
+../Core/Src/imu_test.c:372:13:MX_I2C1_Init	8	static
+../Core/Src/imu_test.c:420:13:MX_I2C2_Init	8	static
+../Core/Src/imu_test.c:468:13:MX_USART5_UART_Init	8	static
+../Core/Src/imu_test.c:503:13:MX_USART6_UART_Init	8	static
+../Core/Src/imu_test.c:538:13:MX_GPIO_Init	56	static
+../Core/Src/imu_test.c:614:6:Error_Handler	8	static,ignoring_inline_asm
