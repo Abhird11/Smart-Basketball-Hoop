@@ -96,6 +96,8 @@ class Obj:
 ball = Obj("ball")
 hoop = Obj("hoop")
 player = Obj("player")
+ball_timer = 0
+player_timer = 0
 
 # Initialize arc points arrays
 arc_points = []
@@ -162,71 +164,6 @@ def updateStatistics():
             '''
             time.sleep(0.2)
 
-
-'''
-# Read data from MCU
-def updateStatistics():
-    global shots_taken, shots_scored, shots_missed, shot_percentage, rim_shots, back_shots, airballs, swishes
-    global phase, ball, player, hoop
-    [ultrasonic, accel_rim_x, accel_rim_y, accel_rim_z, accel_back_x, accel_back_y, accel_back_z] = [0,0,0,0,0,0,0]
-    ser = serial.Serial(port="COM4", baudrate=115200)
-    phases_transitioned = 0
-    while phase == "Setup":
-        time.sleep(0.2)
-    while True:
-
-
-        while phase == "Loading" or phase == "Returning":
-            time.sleep(0.2)
-        ultrasonic_flag = 0
-        accel_rim_flag = 0
-        accel_back_flag = 0
-        while (phase == "Shooting" or phase == "Landing"):
-            time.sleep(0.2)
-            if (abs(ball.x1 - player.x1) - abs(hoop.x1 - player.x1)) / abs(hoop.x1 - player.x1) > 0.25:
-                phases_transitioned = 1
-
-            print("Trying to read data")
-            data = str(ser.readline(), 'UTF-8').split()
-            print("Read data")
-            print(data)
-            
-            if (len(data) == 7):
-                
-                ultrasonic = int(data[0])
-                accel_rim_x = (accel_rim_x + int(data[1])) / 2
-                accel_rim_y = (accel_rim_y + int(data[2])) / 2
-                accel_rim_z = (accel_rim_z + int(data[3])) / 2
-                accel_back_x = (accel_back_x + int(data[4])) / 2
-                accel_back_y = (accel_back_y + int(data[5])) / 2
-                accel_back_z = (accel_back_z + int(data[6])) / 2
-    
-                if ultrasonic_flag == 0 and ultrasonic > ULTRASONIC_THRESH:
-                    shots_scored += 1
-                    shot_percentage = math.floor(10000 * shots_scored / shots_taken) / 100
-                    ultrasonic_flag = 1
-    
-                accel_rim_mag = math.sqrt(accel_rim_x**2 + accel_rim_y**2 + accel_rim_z**2)
-                accel_back_mag = math.sqrt(accel_back_x**2 + accel_back_y**2 + accel_back_z**2)
-    
-                if accel_rim_flag == 0 and accel_rim_mag > ACCEL_RIM_THRESH:
-                    rim_shots += 1
-                    accel_rim_flag = 1
-    
-                if accel_back_flag == 0 and accel_back_mag > ACCEL_BACK_THRESH:
-                    back_shots += 1
-                    accel_back_flag = 1
-
-        if phases_transitioned == 1:
-            shots_taken += 1
-            shot_percentage = math.floor(10000 * shots_scored / shots_taken) / 100
-            if ultrasonic_flag == 0 and accel_rim_flag == 0 and accel_back_flag == 0:
-                airballs += 1
-            if ultrasonic_flag == 1 and accel_rim_flag == 0 and accel_back_flag == 0:
-                swishes += 1
-        phases_transitioned = 0
-
-'''
 threading.Thread(target=updateStatistics).start()
 
 # Calculate the ideal arc
@@ -253,16 +190,11 @@ while True:
 
     # Decrease confidence as frames go forward for ball and player,
     # since those locations are likely to be changes
-    if not phase == "Loading":
-        if ball.conf > 0.05:
-            ball.conf /= 2
-        if player.conf > 0.05:
-            player.conf /= 2
-    else:
+    if not phase == "Loading" or phase == "Setup":
         if ball.conf > 0.3:
-            ball.conf -= 0.05
-        if player.conf > .3:
-            player.conf -= 0.05
+            ball.conf /= 2
+        if player.conf > 0.3:
+            player.conf /= 2
 
     for r in results:
 
@@ -273,6 +205,9 @@ while True:
         max_player_conf = 0
         max_ball_conf = 0
         max_hoop_conf = 0
+        ball.conf_curr = 0
+        hoop.conf_curr = 0
+        player.conf_curr = 0
 
         # Loop through each bounding box in frame
         for box in boxes:
@@ -304,7 +239,7 @@ while True:
                     elif math.sqrt((x1 - ball.x1) ** 2 + (y1 - ball.y1) ** 2) < ball.w * 5:
                         conf *= 3
                     else:
-                        if phase == "Loading":
+                        if phase == "Loading" and (x1 > player.x2 or x2 < player.x1):
                             conf = 0
                 elif phase == "Landing" or phase == "Returning":
                     if ball.x1 - x1 < ball.w * 2 and x1 < ball.x1:
@@ -347,8 +282,14 @@ while True:
             else:
                 ball.set_pred(ball.x1_curr, ball.y1_curr, ball.x2_curr, ball.y2_curr)
 
+
+        if ball_timer == 2:
+            phase = "Setup"
+        if ball.conf == 0:
+            ball_timer += 1
+
         # Hoop tracking logic
-        if max_hoop_conf > 0:
+        if max_hoop_conf > 0.4:
             hoop.set(hoop.x1_curr, hoop.y1_curr, hoop.x2_curr, hoop.y2_curr, hoop.conf_curr)
         '''
         if hoop.x1_curr < hoop.x2 or hoop.x2_curr > hoop.x1 or hoop.x1_curr < hoop.x2_pred or hoop.x2_curr > hoop.x1_pred:
@@ -370,11 +311,11 @@ while True:
         '''
 
         # Display final object boxes
-        if ball.conf > 0:
-            cvzone.cornerRect(img, (ball.x1, ball.y1, ball.w, ball.h), rt = 10, colorR = (255, 0, 0), colorC = (0, 0, 255))
-            cvzone.putTextRect(img, f'{ball.className} {ball.conf}', (max(0, ball.x1), max(40, min(FRAME_HEIGHT - 120, ball.y1 - 20))), colorR=(255,0,0))
-            if phase == "Shooting":
-                arc_points.append((ball.centerx, ball.centery))
+        #if ball.conf > 0:
+        cvzone.cornerRect(img, (ball.x1, ball.y1, ball.w, ball.h), rt = 10, colorR = (255, 0, 0), colorC = (0, 0, 255))
+        cvzone.putTextRect(img, f'{ball.className} {ball.conf}', (max(0, ball.x1), max(40, min(FRAME_HEIGHT - 120, ball.y1 - 20))), colorR=(255,0,0))
+        if phase == "Shooting":
+            arc_points.append((ball.centerx, ball.centery))
         if hoop.conf > 0:
             cvzone.cornerRect(img, (hoop.x1, hoop.y1, hoop.w, hoop.h), rt = 10, colorR = (255, 0, 0), colorC = (0, 0, 255))
             cvzone.putTextRect(img, f'{hoop.className} {hoop.conf}', (max(0, hoop.x1), max(40, min(FRAME_HEIGHT - 120, hoop.y1 - 20))), colorR=(255,0,0))
