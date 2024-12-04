@@ -1,5 +1,6 @@
 import tkinter as tk
 import zmq
+import socket
 
 class ScoreApp:
     def __init__(self, root):
@@ -15,18 +16,40 @@ class ScoreApp:
         self.clear_button.pack(pady=10)
     
 
+    def is_server_running(self, host="localhost", port=5555):
+        try:
+            with socket.create_connection((host, port), timeout=2):
+                return True
+        except (socket.timeout, ConnectionRefusedError):
+            return False
+
     def clear_score(self):
+        if not self.is_server_running():
+            print("Server is not running.")
+            return
+
         context = zmq.Context()
 
         socket = context.socket(zmq.REQ)
-        socket.connect("tcp://localhost:5555")  
+        try:
+            socket.connect("tcp://localhost:5555")
 
-        request = "World"
-        print(f"Sending request: {request}")
-        socket.send_string(request)
+            request = "World"
+            print(f"Sending request: {request}")
+            socket.send_string(request)
 
-        reply = socket.recv_string()
-        print(f"Received reply: {reply}")
+            socket.setsockopt(zmq.RCVTIMEO, 2000) 
+
+            try:
+                reply = socket.recv_string()
+                print(f"Received reply: {reply}")
+            except zmq.Again:
+                print("No response from server, request timed out.")
+        except zmq.ZMQError as e:
+            print("Error connecting to server:", e)
+        finally:
+            socket.close()
+        
 
     def save_score(self):
         pass
